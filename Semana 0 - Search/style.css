@@ -1,35 +1,56 @@
-input {
-    border-radius: 25px;
-    align-self: center;
-    color: teal;
+
+
+.hipervinculo {
+    color: rgba(0, 0, 255, 0.658);
+    padding: 5px;
+    text-align: right;
+    text-decoration: solid;
+    
+    display: list-item;
 }
+
+.default_font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hipervinculo:hover {
+    color : grey;
+    text-decoration: underline;
+}
+#Hiperviculos {
+    text-align: right;
+}
+
 .button {
     background-color : rgb(244, 244, 244);
     text-align: center;
     color:  rgb(95, 99, 104);/*text color */
     border-style: solid;
-    border-color:rgb(244, 244, 244);
+    border-color:rgb(244, 244, 244); /*Same color as Background color*/
     border-radius: 5px;
     height: 36px;
     min-width: 54px;
     font-size: 16px;
-
-    display : block;
-    margin-left: auto;
-    margin-right: auto;
+    margin:20px;
     
+
 
 }
 
 .search_bar {
     height: 44px;
-    margin-left: auto;
-    margin-right: auto;
     width: 482px;
-
+    background-color: transparent;
+    
+    font-size: 16px;
+    color: black;
+    border: 2px black;
+    
     text-indent: 5%;
 }
-
+.search_bar:hover {
+    background-color: rgba(128, 128, 128, 0.123);
+}
 .button:hover{
     color: black;
     border-style: solid;
@@ -39,9 +60,20 @@ input {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px;
-    height: 92px;
+        
   }
+
+#button_row {
+    text-align:center;
+    margin: auto;
+    
+}
+
+#google_logo{
+    height: 92px;
+    width: 272px;
+    padding: 100px;
+}
 h1 {
     color: blue; 
 }   

@@ -5,17 +5,28 @@
         <link rel="stylesheet" href="style.css"> 
     </head>
     <body>
-    <body>
-
-        <img src="https://www.google.es/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" class="center">
-
-
-        <a href="advanced_search.html">Advanced search</a>
-        <a href="image_search.html"> Image search</a>
         
-        <form action="https://google.es/search"> 
-            <input type="text" name="q" class = "search_bar" >
-            <input type="submit" value="Google Search" class = "button">
-        </form>
+        <div > 
+            <div id="Hipervinculos" class="default_font">
+
+                <a href="advanced_search.html " class="hipervinculo">Advanced search</a>
+                <a href="image_search.html" class="hipervinculo"> Image search</a>
+                
+            </div>
+            <img src="https://www.google.es/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" class="center" id="google_logo">
+
+
+            <form action="https://google.es/search"  class="default_font"> 
+                <input type="text" name="q" class = "search_bar center" placeholder="Search here!" >
+
+                <div id="button_row" > 
+                    <input type="submit" value="Google Search" class = "button" >
+                    <input type="submit" value="I'm Feeling Lucky" class = "button" >
+
+                </div>
+
+            </form>
+        </div>
+
     </body>
 </html>
