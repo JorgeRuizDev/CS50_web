@@ -37,19 +37,28 @@
 
 }
 
+
 .search_bar {
     height: 44px;
     width: 482px;
-    background-color: transparent;
+   
     
     font-size: 16px;
     color: black;
-    border: 2px black;
+    
     
     text-indent: 5%;
+
+    border-radius: 25px;
+    border: 1px solid rgb(180, 180, 180);
+    
+
+
 }
 .search_bar:hover {
-    background-color: rgba(128, 128, 128, 0.123);
+    
+    box-shadow: 0 0 0 2px rgba(88, 88, 88, 0.2);
+    
 }
 .button:hover{
     color: black;
