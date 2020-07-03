@@ -1,0 +1,47 @@
+input {
+    border-radius: 25px;
+    align-self: center;
+    color: teal;
+}
+.button {
+    background-color : rgb(244, 244, 244);
+    text-align: center;
+    color:  rgb(95, 99, 104);/*text color */
+    border-style: solid;
+    border-color:rgb(244, 244, 244);
+    border-radius: 5px;
+    height: 36px;
+    min-width: 54px;
+    font-size: 16px;
+
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.search_bar {
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 482px;
+
+    text-indent: 5%;
+}
+
+.button:hover{
+    color: black;
+    border-style: solid;
+    border-color: grey;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+    height: 92px;
+  }
+h1 {
+    color: blue; 
+}   
