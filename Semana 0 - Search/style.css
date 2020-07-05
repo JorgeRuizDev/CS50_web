@@ -145,9 +145,12 @@ Google Images
 	
 }
 
+.form_row {
+	margin-bottom: 30px;
+}
+
 .form_row > *{
 	display: inline;
-	margin-bottom: 25px;
 }
 .form_row > input{
 	
@@ -187,6 +190,6 @@ Google Images
 #advanced_search_button{
 	color: white;
 	background-color: #3079ed;
-	margin-left: 4vw;
+	margin-left: 37vw;
 	font-size: 13.3px;
 }
