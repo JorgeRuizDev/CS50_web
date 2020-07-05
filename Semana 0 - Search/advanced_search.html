@@ -29,7 +29,7 @@
 
 			<div id="find_pages_with_div">
 				<h3 id="find_pages_with" class="default_font"> Find pages with... </h3>
-				<bold>To do this in the search box</bold>
+				<bold id="to_do_this_in_search_box">To do this in the search box</bold>
 			</div>
 
 
@@ -38,29 +38,31 @@
 
 				<div class="form_row" >
 					<p>all these words:</p>
-					<input type="text" name="q">
+					<input type="text" name="as_q">
 					<small>Type the important words: tri-colour rat terrier</small>
 				</div>
 
 				<div class="form_row" >
-					<p>all these words:</p>
-					<input type="text" name="q">
+					<p>this exact word or phrase:</p>
+					<input type="text" name="as_epq">
 					<small>Put exact words in quotes: "rat terrier"</small>
 				</div>
 
 				
 				<div class="form_row" >
-					<p>all these words:</p>
-					<input type="text" name="q">
+					<p>any of these words:</p>
+					<input type="text" name="as_oq">
 						
 					<small>Type OR between all the words you want: miniature OR standard</small></div>
 				
 
 				<div class="form_row" >
-					<p>all these words:</p>
-					<input type="text" name="q">
+					<p>none of these words:</p>
+					<input type="text" name="as_eq">
 					<small>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</small>
 				</div>
+
+				<input type="submit" value="Advanced Search" class="button default_font" id="advanced_search_button">
 			</form>
 
 		</div>

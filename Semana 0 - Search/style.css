@@ -127,15 +127,22 @@ Google Images
 
 	font-size: 17px;
 	margin-top: 20px;	
+	float: left;
 }
 #find_pages_with_div{
-	display: inline;
-	
+	display: flex;
+    
+}
+#to_do_this_in_search_box{
+
+	margin-left: 42vw;
+	margin-top: 20px;	
+	font-weight: 400;
 }
 #advanced_search{
 
 	margin:30px
-
+	
 }
 
 .form_row > *{
@@ -143,12 +150,11 @@ Google Images
 	margin-bottom: 25px;
 }
 .form_row > input{
-	margin-left: 50px;
 	
 	border-width: 1px;
 	border-color: rgb(214, 210, 210);
 
-	width: 40vw;
+	width: 30vw;
 		
 }
 @media (max-width: 600px){
@@ -161,6 +167,7 @@ Google Images
 	.form_row > input{
 		margin-left : 5px
 		}	
+
 }
 
 .form_row > small {
@@ -174,4 +181,12 @@ Google Images
 }
 .form_row > p {
 	font-size: 13px;
+	width : 250px	;
+	display: inline-block;
+}
+#advanced_search_button{
+	color: white;
+	background-color: #3079ed;
+	margin-left: 4vw;
+	font-size: 13.3px;
 }
