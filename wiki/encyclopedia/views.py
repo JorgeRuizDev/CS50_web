@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
-
+from django.http import HttpRequest
 from .forms import NewEntryForm
 from .forms import NewSearchForm
 
@@ -28,6 +28,7 @@ def render_wiki(request, wiki_name):
     request: request object
     wiki_name: The name of the entry to be rendered
     """
+    
     if not util.entry_exists(wiki_name):
         return error_reply(request, wiki_name)
 
@@ -95,12 +96,14 @@ def view_error404(request, exception):
     return error_reply(request, "404")
 
 
-def edit_entry(request):
+def edit_entry(request: HttpRequest):
     """
     View that edits an entry.
     It uses the same template as add_entry()
     """
     entry = request.GET.get("entry")
+    
+    request.
 
     if not util.entry_exists(entry):
         return error_reply(request, entry)
@@ -113,6 +116,7 @@ def edit_entry(request):
         return render_wiki(request, entry)
 
     context = {
+        "test": "test",
         "form": form,
         "is_edit_page": True,
         "title_edit": entry
@@ -127,6 +131,11 @@ def edit_entry(request):
         context["form"] = NewEntryForm(initial={'body': request.POST.get("body")})
 
     return render(request, "encyclopedia/new_page.html", context)
+
+def test_intelli(request):
+    return 0 
+
+
 
 
 def add_entry(request):
@@ -154,6 +163,9 @@ def add_entry(request):
 
     if not form.is_valid():
         context["feedback"] = True
+
+
+
 
     return render(request, "encyclopedia/new_page.html", context)
 
